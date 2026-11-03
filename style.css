@@ -227,7 +227,7 @@ section { padding: 28px 0; }
 .link-btn.internal { color: var(--orange-dark); border-color: #f2d4b0; background: #fff; }
 .link-btn.internal:hover { background: var(--orange); color: #fff; border-color: var(--orange); }
 .link-btn.internal::after { content: "→"; }
-.bullet-link { display: flex; flex-direction: column; gap: 6px; align-items: flex-start; }
+.bullet-link .link-btn { margin-top: 4px; display: flex; }
 
 /* ---------- footer ---------- */
 footer { margin-top: 40px; border-top: 1px solid var(--line); padding: 20px 0 32px; color: var(--ink-3); font-size: 13px; }
