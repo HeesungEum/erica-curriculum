@@ -227,7 +227,10 @@ section { padding: 28px 0; }
 .link-btn.internal { color: var(--orange-dark); border-color: #f2d4b0; background: #fff; }
 .link-btn.internal:hover { background: var(--orange); color: #fff; border-color: var(--orange); }
 .link-btn.internal::after { content: "→"; }
-.bullet-link .link-btn { display: flex; margin: 6px 0 2px; }
+.col ul.goals li.bullet-link { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
+.bullet-link .link-btn { flex: none; white-space: nowrap; font-size: 12px; padding: 2px 8px; margin-top: 2px; }
+.pillrow { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.pillrow .link-btn { font-size: 12px; padding: 2px 8px; white-space: nowrap; }
 
 /* ---------- footer ---------- */
 footer { margin-top: 40px; border-top: 1px solid var(--line); padding: 20px 0 32px; color: var(--ink-3); font-size: 13px; }
