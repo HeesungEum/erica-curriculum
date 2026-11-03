@@ -178,7 +178,7 @@ section { padding: 28px 0; }
 .col.tint-o h4 { color: var(--orange); }
 .col.tint-y h4 { color: var(--gold); }
 .col ul.goals { margin: 0; padding: 0; list-style: none; font-size: 14.5px; }
-.col ul.goals li { margin: 3px 0; padding-left: 16px; position: relative; }
+.col ul.goals li { margin: 7px 0; line-height: 1.6; padding-left: 16px; position: relative; }
 .col ul.goals li::before { content: ""; position: absolute; left: 3px; top: .7em; width: 5px; height: 5px; border-radius: 50%; background: var(--blue-mid); }
 .col.tint-o ul.goals li::before { background: var(--orange); }
 .col.tint-y ul.goals li::before { background: var(--gold); }
@@ -227,7 +227,7 @@ section { padding: 28px 0; }
 .link-btn.internal { color: var(--orange-dark); border-color: #f2d4b0; background: #fff; }
 .link-btn.internal:hover { background: var(--orange); color: #fff; border-color: var(--orange); }
 .link-btn.internal::after { content: "→"; }
-.bullet-link .link-btn, .lead .link-btn { white-space: nowrap; display: inline-flex; margin-left: 4px; vertical-align: middle; }
+.bullet-link .link-btn { display: flex; margin: 6px 0 2px; }
 
 /* ---------- footer ---------- */
 footer { margin-top: 40px; border-top: 1px solid var(--line); padding: 20px 0 32px; color: var(--ink-3); font-size: 13px; }
