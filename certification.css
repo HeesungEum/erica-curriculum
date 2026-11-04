@@ -1,0 +1,85 @@
+/* ---------- 06 ERICA 역량 인증 ---------- */
+.cert-card { display: flex; align-items: center; gap: 16px; padding: 20px; text-decoration: none; color: inherit; position: relative; }
+.cert-card h3 { margin: 0; font-size: 20px; font-weight: 800; color: var(--navy); }
+.cert-card .cc-kind { margin: 0 0 2px; font-size: 14px; color: var(--ink-2); font-weight: 600; }
+.cert-card .cc-go { margin-left: auto; font-size: 13px; font-weight: 700; color: var(--blue); white-space: nowrap; }
+a.cert-card { border-color: var(--blue); background: var(--blue-pale); }
+a.cert-card:hover { background: var(--blue-light); }
+
+/* ---------- HY-ROUTE ---------- */
+:root { --hr-navy: #1f3d6e; --hr-ink: #18243c; --hr-gold: #c9a14b; --hr-teal: #2e8591; --hr-green: #6fa33e; --hr-orange: #d97934; }
+.hr-hero { background: var(--hr-navy); color: #fff; border-bottom: 6px solid var(--hr-gold); }
+.hr-hero .wrap { padding-top: 40px; padding-bottom: 36px; position: relative; }
+.hr-hero .kicker { font-size: 12px; letter-spacing: .14em; color: #bfd0e5; margin: 0 0 14px; }
+.hr-hero .org { font-size: 16px; font-weight: 600; margin: 0 0 4px; }
+.hr-hero h1 { margin: 0; font-size: clamp(40px, 8vw, 84px); font-weight: 800; letter-spacing: -.01em; line-height: 1.05; }
+.hr-hero h2 { margin: 10px 0 8px; font-size: clamp(24px, 3.6vw, 36px); font-weight: 800; }
+.hr-hero .lead { margin: 0; max-width: 760px; font-size: 17px; color: #e2eaf5; }
+.hr-hero .year { position: absolute; right: 24px; top: 36px; text-align: right; color: rgba(191,208,229,.45); font-size: 72px; font-weight: 800; line-height: 1; }
+.hr-hero .year small { display: block; font-size: 11px; letter-spacing: .16em; color: #bfd0e5; margin-top: 6px; font-weight: 500; }
+.hr-tag-gold { display: inline-block; background: var(--hr-navy); color: #fff; font-weight: 700; letter-spacing: .1em; font-size: 14px; padding: 4px 16px 4px 14px; border-left: 14px solid var(--hr-gold); }
+.hr-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; flex-wrap: wrap; margin-bottom: 16px; }
+.hr-head p { margin: 0; }
+.hr-head .eyebrow { font-size: 12px; letter-spacing: .14em; color: var(--hr-gold); margin: 14px 0 2px; }
+.hr-head h2 { margin: 0; font-size: clamp(22px, 3vw, 30px); font-weight: 800; color: var(--hr-ink); }
+.hr-head .side { font-size: 13px; color: var(--ink-3); text-align: right; }
+
+.route-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; }
+.route-card { background: #fff; border: 1px solid var(--line); border-top: 4px solid var(--c); text-align: center; padding: 22px 12px 20px; }
+.route-card .ltr { font-size: 64px; font-weight: 800; line-height: 1; color: var(--c); }
+.route-card h3 { margin: 14px 0 0; font-size: 20px; font-weight: 600; }
+.route-card .kr { font-size: 14px; color: var(--ink-3); margin: 0 0 8px; }
+.route-card p { margin: 0; font-size: 14.5px; color: var(--ink-2); }
+.route-card p.kr { margin: 0 0 8px; }
+.route-card.last { background: var(--hr-navy); border-color: var(--hr-navy); border-top-color: var(--hr-gold); color: #fff; }
+.route-card.last .ltr { color: #fff; }
+.route-card.last .kr, .route-card.last p { color: #dce6f4; }
+
+.level-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; }
+.level { background: #fff; border: 1px solid var(--line); text-align: center; }
+.level header { background: var(--c); color: #fff; font-weight: 700; letter-spacing: .06em; padding: 10px 6px; }
+.level .body { padding: 18px 10px 20px; }
+.level .nm { font-size: 11px; letter-spacing: .16em; color: var(--c); font-weight: 700; margin: 0; }
+.level .pt { font-size: clamp(28px, 3.4vw, 38px); font-weight: 800; margin: 4px 0 0; color: var(--hr-ink); }
+.level .pt small { font-size: 18px; color: var(--c); }
+.level .cap { font-size: 12.5px; color: var(--ink-3); margin: 0 0 14px; }
+.level .req { font-size: 13.5px; color: var(--ink-2); margin: 0; }
+.level .req b { display: block; color: var(--hr-ink); }
+.level.top { background: var(--hr-navy); border-color: var(--hr-navy); }
+.level.top .pt, .level.top .req b { color: #fff; }
+.level.top .cap, .level.top .req { color: #dce6f4; }
+.level.top .nm, .level.top .pt small { color: var(--hr-gold); }
+
+.cond-wrap { overflow-x: auto; }
+.cond { width: 100%; border-collapse: collapse; background: #fff; border: 1px solid var(--line); }
+.cond thead th { background: var(--hr-navy); color: #fff; font-size: 14px; padding: 12px 16px; text-align: left; }
+.cond td { padding: 14px 16px; border-bottom: 1px solid var(--line); font-size: 15px; vertical-align: middle; }
+.cond td.c1 { color: var(--hr-navy); font-weight: 700; white-space: nowrap; }
+.cond td.pt { font-size: 22px; font-weight: 800; color: var(--hr-navy); white-space: nowrap; }
+.cond td.pt small { font-size: 12px; font-weight: 500; }
+.cond td.nt { color: var(--ink-2); font-size: 14px; }
+.cond td small.sub { display: block; color: var(--ink-3); font-size: 12px; margin-top: 2px; }
+.cond tr.hl td { background: #f8f0dd; }
+.cond tr.hl td.c1 { color: #8b6f47; }
+
+.hr-foot { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 16px; }
+.formula { border: 1px solid var(--hr-navy); background: #fff; padding: 16px 20px; }
+.formula .eyebrow { font-size: 12px; letter-spacing: .12em; color: var(--hr-gold); font-weight: 700; margin: 0 0 4px; }
+.formula p { margin: 0; font-size: 18px; font-weight: 700; color: var(--hr-navy); }
+.formula p.eyebrow { font-size: 12px; color: var(--hr-gold); }
+.formula p em { font-style: normal; color: #8b6f47; }
+.reward { background: var(--hr-navy); color: #fff; padding: 16px 20px; display: flex; gap: 16px; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+.reward .eyebrow { font-size: 12px; letter-spacing: .12em; color: var(--hr-gold); font-weight: 700; margin: 0 0 4px; }
+.reward p { margin: 0; font-size: 15px; font-weight: 600; }
+.reward p.eyebrow { font-size: 12px; }
+.reward img { height: 56px; max-width: 100%; border-radius: 2px; }
+
+@media (max-width: 960px) {
+  .route-grid, .level-grid { grid-template-columns: repeat(3, 1fr); }
+  .hr-foot { grid-template-columns: 1fr; }
+  .hr-hero .year { display: none; }
+}
+@media (max-width: 640px) {
+  .route-grid, .level-grid { grid-template-columns: 1fr 1fr; }
+  .cert-card .cc-go { display: none; }
+}
