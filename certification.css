@@ -14,7 +14,7 @@ a.cert-card:hover { background: var(--blue-light); }
 .hr-hero .org { font-size: 16px; font-weight: 600; margin: 0 0 4px; }
 .hr-hero h1 { margin: 0; font-size: clamp(40px, 8vw, 84px); font-weight: 800; letter-spacing: -.01em; line-height: 1.05; }
 .hr-hero h2 { margin: 10px 0 8px; font-size: clamp(24px, 3.6vw, 36px); font-weight: 800; }
-.hr-hero .lead { margin: 0; max-width: 760px; font-size: 17px; color: #e2eaf5; }
+.hr-hero .lead { margin: 0; font-size: 17px; color: #e2eaf5; }
 .hr-hero .year { position: absolute; right: 24px; top: 36px; text-align: right; color: rgba(191,208,229,.45); font-size: 72px; font-weight: 800; line-height: 1; }
 .hr-hero .year small { display: block; font-size: 11px; letter-spacing: .16em; color: #bfd0e5; margin-top: 6px; font-weight: 500; }
 .hr-tag-gold { display: inline-block; background: var(--hr-navy); color: #fff; font-weight: 700; letter-spacing: .1em; font-size: 14px; padding: 4px 16px 4px 14px; border-left: 14px solid var(--hr-gold); }
@@ -62,17 +62,18 @@ a.cert-card:hover { background: var(--blue-light); }
 .cond tr.hl td { background: #f8f0dd; }
 .cond tr.hl td.c1 { color: #8b6f47; }
 
-.hr-foot { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 16px; }
+.hr-foot { display: grid; grid-template-columns: 1fr; gap: 16px; margin-top: 16px; }
 .formula { border: 1px solid var(--hr-navy); background: #fff; padding: 16px 20px; }
 .formula .eyebrow { font-size: 12px; letter-spacing: .12em; color: var(--hr-gold); font-weight: 700; margin: 0 0 4px; }
 .formula p { margin: 0; font-size: 18px; font-weight: 700; color: var(--hr-navy); }
 .formula p.eyebrow { font-size: 12px; color: var(--hr-gold); }
 .formula p em { font-style: normal; color: #8b6f47; }
-.reward { background: var(--hr-navy); color: #fff; padding: 16px 20px; display: flex; gap: 16px; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+.reward { background: #004483; color: #fff; display: flex; flex-direction: column; overflow: hidden; }
+.reward .rw-text { padding: 16px 20px 12px; }
 .reward .eyebrow { font-size: 12px; letter-spacing: .12em; color: var(--hr-gold); font-weight: 700; margin: 0 0 4px; }
 .reward p { margin: 0; font-size: 15px; font-weight: 600; }
 .reward p.eyebrow { font-size: 12px; }
-.reward img { height: 56px; max-width: 100%; border-radius: 2px; }
+.reward img { display: block; width: 100%; height: auto; }
 
 @media (max-width: 960px) {
   .route-grid, .level-grid { grid-template-columns: repeat(3, 1fr); }
